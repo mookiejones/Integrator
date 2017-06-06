@@ -1,0 +1,12 @@
+{
+  "name": "starter-node-angular",
+  "main": "server.js",
+  
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "method-override": "^2.3.9",
+    "morgan": "^1.8.2",
+    "mssql": "^4.0.4"
+  }
+}

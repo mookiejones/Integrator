@@ -1,0 +1,26 @@
+<div class="jumbotron text-center">
+	<h1>Applications</h1>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<select ng-model='selectedController' ng-change='controllerChanged()' ng-options='controller as controller.ContName for controller in controllers'>
+				</select>
+			</div>
+			<div class="col-md-4">
+				<select ng-model='selectedApplication' ng-change='applicationChanged()' ng-options='application as application.AppTypeName for application in applications'>
+				</select>
+			</div>
+			<div class="col-md-4">
+				<select ng-model='selectedAppPath' ng-change='appPathChanged()' ng-options='appPaath as appPath.PathName for appPath in appPaths'>
+				</select>
+			</div>
+		</div>
+		 
+
+	</div>
+			
+
+
+	<p>{{ tagline }}</p>
+</div>
