@@ -25,6 +25,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			templateUrl: 'views/applications.html',
 			controller: 'DataController'
 		})
+		.when('/files', {
+			templateUrl: 'views/files.html',
+			controller: 'FileController'
+		})
 
 		.when('/geeks', {
 			templateUrl: 'views/geek.html',

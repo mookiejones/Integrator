@@ -1,1 +1,1 @@
-angular.module('sampleApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'NerdCtrl','DataCtrl','DataService','NerdService', 'GeekCtrl', 'GeekService']);
+angular.module('kukaApp', ['ngMaterial','md-steppers','ngRoute', 'appRoutes', 'MainCtrl','FileCtrl', 'NerdCtrl','DataCtrl','DataService','NerdService', 'GeekCtrl', 'GeekService']);
