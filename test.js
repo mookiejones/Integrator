@@ -1,4 +1,4 @@
-var api=require('./src/app/models/robotprogramming')
+var api=require('./src/KukaSql')
 var test=require('assert')
 var ContNum=2;
 var CAppNum=2;
@@ -7,8 +7,9 @@ console.log('test me');
 // api.getControllerNames(function(result){
 //     debugger;
 // })
+
 api.getControllerNames()
-    .then(result=>{
+    .then(result =>{
         test.equal(result.length,14);
     });
 
