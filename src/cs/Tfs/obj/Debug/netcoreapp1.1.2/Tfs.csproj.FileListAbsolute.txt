@@ -1,0 +1,8 @@
+D:\work\Integrator\src\cs\Tfs\bin\Debug\netcoreapp1.1.2\Tfs.deps.json
+D:\work\Integrator\src\cs\Tfs\bin\Debug\netcoreapp1.1.2\Tfs.runtimeconfig.json
+D:\work\Integrator\src\cs\Tfs\bin\Debug\netcoreapp1.1.2\Tfs.runtimeconfig.dev.json
+D:\work\Integrator\src\cs\Tfs\bin\Debug\netcoreapp1.1.2\Tfs.dll
+D:\work\Integrator\src\cs\Tfs\bin\Debug\netcoreapp1.1.2\Tfs.pdb
+D:\work\Integrator\src\cs\Tfs\obj\Debug\netcoreapp1.1.2\Tfs.AssemblyInfo.cs
+D:\work\Integrator\src\cs\Tfs\obj\Debug\netcoreapp1.1.2\Tfs.dll
+D:\work\Integrator\src\cs\Tfs\obj\Debug\netcoreapp1.1.2\Tfs.pdb
