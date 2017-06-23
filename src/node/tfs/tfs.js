@@ -1,6 +1,6 @@
 const common=require('./common');
 const projects=require('./projects')
-
+const bugs=require('./bug')
 function tfs(){
 
 }
@@ -8,5 +8,6 @@ function tfs(){
 
 module.exports={
     projects:projects,
-    common:common
+    common:common,
+    bug:bugs
 };

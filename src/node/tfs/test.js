@@ -10,7 +10,7 @@ const SERVER_URL="https://kukasim.visualstudio.com/DefaultCollection";
 var options = common.createOptions("/_apis/projects?api-version=1.0");
 
 
-tfs.projects.listProjects();
+tfs.bug.listBugs();
 
 
 
