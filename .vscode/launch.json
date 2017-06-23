@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch TFS Test",
-            "program": "${workspaceRoot}/test_tfs.js"
+            "program": "${workspaceRoot}/src/node/tfs/test.js"
         },
 
         {
