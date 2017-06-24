@@ -1,10 +1,11 @@
 {
   "name": "kukasql",
+  "private": true,
   "version": "1.0.0",
   "description": "Node Js Implementation of AZURE SQL Server for KUKA",
   "main": "KukaSql.js",
   "scripts": {
-    "test": "KukaSql.Test.js"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
@@ -13,7 +14,10 @@
   "keywords": [
     "Kuka"
   ],
-  "author": "Charles Berman <Charles.Heath.Berman@kukanao.com>",
+  "author":{
+    "name":"Charles Berman",
+    "email":"Charles.Berman@kukanao.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mookiejones/Integrator/issues"
@@ -22,5 +26,10 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "mssql": "^4.0.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-zip": "^4.0.0",
+    "minimist": "^1.2.0"
   }
 }
