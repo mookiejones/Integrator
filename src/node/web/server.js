@@ -5,8 +5,10 @@ var express = require('express');
 var app = express();
 var bodyParser= require('body-parser');
 var methodOverride = require('method-override');
+var FanucProcess = require('../FanucProcess/FanucProcess');
+ var FileServer = require('../FileServer/FileServer');
+ 
 
- var FileServer = require('./FileServer/fileserver');
 // configuration
 
 // config files

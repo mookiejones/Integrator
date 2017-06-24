@@ -2,7 +2,7 @@ const formidable = require('formidable');
 const fs = require('fs');
 const unzip = require('unzip')
 const savepath='./files/';
-var fp = require('./FanucProcess')
+var fp = require('../FanucProcess/FanucProcess')
 const multer = require('multer');
 const unzipper = require('unzipper');
 const path = require('path');
@@ -58,7 +58,11 @@ function FileServer(){}
             // var bat = exe+ ' '+to;
             // var p = cmd.run(bat);
             var proc_dir=path.join(to,original);
-            var fanProc= new fp(proc_dir);
+
+            var options = {
+                directory:proc_dir
+            };
+            var fanProc= new fp(options);
             fanProc.processAll();
 
 

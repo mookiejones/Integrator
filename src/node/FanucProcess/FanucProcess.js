@@ -19,7 +19,7 @@ function getFilenameWithoutExtension(file){
 
 function printFile(file){
     var f = getFilenameWithoutExtension(file);
-    var code=`printtp ${f}.tp /config `;
+    var code=`printtp ${f}.tp ${f}.ls /config c:\\robot.ini`;
     
     if(options.isTesting)
     return;
@@ -50,7 +50,7 @@ function printVars(file){
 function deleteFile(file){
     fs.exists(file,result=>{
         if(result)
-            fs.unlink(file,err=>{
+            fs.unlinkSync(file,err=>{
                 assert.equal(err,null);
                 if(err)
                     console.error(chalk.bold.red(`File ${file} couldnt be deleted`));
@@ -79,6 +79,9 @@ var shouldDelete=function(file){
 
 var isTPFile=function(file){
     return file.search(/\.tp/i)!=-1;
+}
+var isLSFile=function(file){
+    return file.search(/\.ls/i)!=-1;
 }
 var isVarFile=function(file){
     return file.search(/\.(?:sv|vr|io)/i)!=-1;
@@ -110,14 +113,15 @@ FanucProcess.prototype.getDir = function(){
 
 FanucProcess.prototype.processAll=function(){
     
-    this.deleteFiles();
+    // this.deleteFiles();
     
     this.processFiles();
    
-    this.cleanup();
+    // this.cleanup();
 }
  
 FanucProcess.prototype.deleteFiles=function(){
+    
     this.files
         .filter(isPreFile)
         .forEach(deleteFile);
@@ -128,8 +132,12 @@ FanucProcess.prototype.processFiles=function(){
   
     fs.createReadStream('c:\\robot.ini')
         .pipe(fs.createWriteStream(path.join(options.directory,'robot.ini')));
-
-   
+    /*
+    this.files
+        .filter(isLSFile)
+        .forEach(deleteFile);
+        */
+    
     
     this.files
         .filter(isTPFile)

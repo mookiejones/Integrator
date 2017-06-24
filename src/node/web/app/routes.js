@@ -2,7 +2,7 @@
 
 // grab the nerd model we just created
     var multer = require('multer');
-    var FileServer = require('../FileServer/fileserver');
+    var FileServer = require('../../FileServer/fileserver');
     var Nerd = require('./models/nerd');
     var Messages = require('./models/messages');
     var fs = require('fs');
