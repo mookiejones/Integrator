@@ -1,10 +1,14 @@
 // public/js/services/NerdService.js
-angular.module('NerdService', []).factory('Nerd', ['$http', function($http) {
+angular.module('FileService', []).factory('Files', ['$http', function($http) {
 
     return {
+
+        send:function(fileData){
+            return $http.post('/api/files',fileData);
+        },
         // call to get all nerds
         get : function() {
-            return $http.get('/api/nerds');
+            return $http.get('/api/files');
         },
 
         a:2,
@@ -12,13 +16,13 @@ angular.module('NerdService', []).factory('Nerd', ['$http', function($http) {
 
                 // these will work when more API routes are defined on the Node side of things
         // call to POST and create a new nerd
-        create : function(nerdData) {
-            return $http.post('/api/nerds', nerdData);
+        create : function(fileData) {
+            return $http.post('/api/files', nerdData);
         },
 
         // call to DELETE a nerd
         delete : function(id) {
-            return $http.delete('/api/nerds/' + id);
+            return $http.delete('/api/files/' + id);
         }
     }       
 

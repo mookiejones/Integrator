@@ -1,36 +1,48 @@
-angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+// public/js/appRoutes.js
+    angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
-	$routeProvider
-		// home page
-		.when('/', {
-			templateUrl: 'views/home.html',
-			controller: 'MainController'
-		})
+    $routeProvider
 
-		.when('/nerds', {
-			templateUrl: 'views/nerd.html',
-			controller: 'NerdController'
-		})
+        // home page
+        .when('/', {
+            templateUrl: 'views/home.html',
+            controller: 'MainController'
+        })
 
-		.when('/decoders', {
-			templateUrl: 'views/decoders.html',
-			controller: 'NerdController'
-		})
-		.when('/olp', {
-			templateUrl: 'views/olp.html',
-			controller: 'NerdController'
-		})
-		
-		.when('/applications', {
-			templateUrl: 'views/applications.html',
-			controller: 'DataController'
-		})
+        // nerds page that will use the NerdController
+        .when('/nerds', {
+            templateUrl: 'views/nerd.html',
+            controller: 'NerdController'
+        })
 
-		.when('/geeks', {
-			templateUrl: 'views/geek.html',
-			controller: 'GeekController'	
-		});
+        .when('/statistics',{
+            templateUrl:'views/statistics.html',
+            controller:'MessageController'
+        })
+        .when('/messages', {
+            templateUrl: 'views/messages.html',
+            controller: 'MessageController'
+        })
 
-	$locationProvider.html5Mode(true);
+        .when('/user',{
+            templateUrl:'views/user.html',
+            controller:'UserController'
+        })
+        .when('/robot',{
+            templateUrl:'views/robot.html',
+            controller:'RobotController'
+        })
+        .when('/files',{
+            templateUrl:'views/files.html',
+            controller:'FileController'
+        })
+        .when('/user/*',{
+            templateUrl:'views/user.html',
+            controller:'UserController'
+        });
+
+   
+
+    $locationProvider.html5Mode(true);
 
 }]);

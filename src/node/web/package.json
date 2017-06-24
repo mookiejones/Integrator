@@ -1,12 +1,44 @@
 {
-  "name": "starter-node-angular",
+  "name": "kuka-internal",
+  "version": "0.0.1",
+  "description": "Internal Kuka server app using express",
   "main": "server.js",
-  
+  "scripts": {
+    "start": ""
+  },
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3",
-    "method-override": "^2.3.9",
-    "morgan": "^1.8.2",
-    "mssql": "^4.0.4"
+    "angular-chart.js": "^1.1.1",
+    "angular-upload": "^1.0.13",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "formidable": "^1.1.1",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "message_helper": "file:local_modules\\message_helper",
+    "method-override": "^2.3.7",
+    "mongodb": "^2.2.12",
+    "mongoose": "^4.7.1",
+    "multer": "^1.3.0",
+    "node-cmd": "^3.0.0",
+    "node-zip": "^1.1.1",
+    "nodemon": "^1.11.0",
+    "unzip": "^0.1.11",
+    "unzipper": "^0.8.8"
+  },
+  "engines": {},
+  "repository": {},
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Charles Berman",
+  "contributors": [],
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-clean-css": "^2.3.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-tsc": "^1.2.6",
+    "typescript": "^2.1.5"
   }
 }

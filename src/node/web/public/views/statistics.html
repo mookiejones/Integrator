@@ -1,0 +1,94 @@
+<!-- public/views/nerd.html -->
+
+<div class="container-full">
+    <h1>Statistics</h1>
+
+    <p>{{ tagline }}</p>
+    <div class='row'>
+
+    <div class='row'>
+            <!--Line Chart-->
+
+        <div class='col-md-12'>         
+             <div class="panel panel-default">
+                <div class="panel-heading">Chart</div>
+                <div class='panel-body'>
+                    <div class='col-md-6'>
+                     <canvas id="pie" class="chart chart-doughnut" chart-data="data" chart-labels="labels" chart-colors='colors' chart-options="options"  chart-dataset-override='doughnutOverride' chart-click='pieClick'>        </canvas>
+                     </div>
+                   
+                   <div class='col-md-6'>
+                     <canvas id="line" class="chart chart-line" chart-data="softwareCount" chart-labels="software"  chart-colors='colors' chart-options="options" chart-dataset-override="datasetOverride" chart-click="onClick"> </canvas>
+                   </div>
+                    
+                </div>
+            </div>
+        </div>
+      
+
+    </div>
+    
+
+  
+
+
+    <div class='row'>
+        <div class="col-md-4">
+        <ul class="nav nav-pills nav-stacked">
+            <li ng-repeat='user in users'>
+                <a href="#" ng-click='userClicked($event)'>{{user._id.user}} <span class="badge">{{user.count}}</span></a>
+
+            </li>
+        </ul>
+        </div>
+        <div class='col-md-8'>
+         <table class='table table-striped table-border table-hover'>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Version</th>
+                <th>User</th>
+                <th>Message</th>
+                <th/>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat='x in messages'>
+            <th>{{ x.TimeStamp }}</th>
+            <th>{{ x.Version }}</th>
+            <th><a href='/user/{{x.User}}'> {{ x.User }}</a></th>
+            <th>{{ x.Message }}</th>
+            <th>
+                <div class="btn-group btn-group-xs">
+                <th>
+                    <!-- Delete Message -->
+                    <button type="button" class="btn  btn-link" ng-click="deleteMessage($event)">
+                    <i class="fa fa-minus" ng-attr-id="{{ x._id }}"></i>
+                    </button>
+                    </th><th>
+                    <!-- View all messages for user -->
+                    <button type="button" class="btn  btn-link">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    </th><th>
+                    <!-- Delete all messages for user -->
+                    <button type="button" class="btn  btn-link glyphicon glyphicon-envelope"/>
+                    </th><th>
+
+                    <!-- View all messages of this type -->
+                    <button type="button" class="btn  btn-link">
+                    <i class="fa fa-times"></i>
+                    </button>
+                    </th>
+                </div>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+        </div>
+
+   
+    </div>
+    </div>
+  
+</div>

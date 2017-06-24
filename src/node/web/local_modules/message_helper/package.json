@@ -1,0 +1,15 @@
+{
+  "name": "message_helper",
+  "version": "0.0.7",
+  "description": "Message helper for kuka data",
+  "main": "index.js",
+  "scripts": {
+    "test":"node tests.js -t functional -l",
+    "test2": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^2.2.19"
+  }
+}
