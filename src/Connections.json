@@ -1,0 +1,4 @@
+{
+    "azure_sql_connection":"mssql://kuka:I<3LarryDrake@robotprogramming.database.windows.net:1433/RobotProgramming?encrypt=true",
+    "mongo_connection":"mongodb://Nerd.Solutions:27017/NerdSolutions"
+}

@@ -1,5 +1,8 @@
 const sql = require('mssql');
 
+const config = require('../KukaConfig/KukaConfig');
+
+
 const connection_string="mssql://kuka:I<3LarryDrake@robotprogramming.database.windows.net:1433/RobotProgramming?encrypt=true";
 
 
@@ -42,6 +45,7 @@ var doQuery=function(query){
 
 
 function RobotProgramming(){
+    fs.readSyn
     sql.connect(connection_string);
 }
 
