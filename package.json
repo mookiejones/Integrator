@@ -8,7 +8,14 @@
     "name": "Charles Berman",
     "email": "Charles.Berman@kuka.com"
   },
-  "dependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "FanucProcess": "file:./src/node/FanucProcess/test",
+    "chalk": "^1.1.3",
+    "express": "^4.15.3"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-zip": "^4.0.0",
