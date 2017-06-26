@@ -6,7 +6,7 @@
   "main": "server.js",
   "author": {
     "name": "Charles Berman",
-    "email": "Charles.Berman@kuka.co"
+    "email": "Charles.Berman@kuka.com"
   },
   "dependencies": {},
   "devDependencies": {
