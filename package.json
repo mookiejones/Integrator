@@ -1,0 +1,17 @@
+{
+  "name": "kuka-cli",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Command line interface for kuka",
+  "main": "server.js",
+  "author": {
+    "name": "Charles Berman",
+    "email": "Charles.Berman@kuka.co"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-zip": "^4.0.0",
+    "minimist": "^1.2.0"
+  }
+}
