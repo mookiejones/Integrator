@@ -1,4 +1,6 @@
 {
     "azure_sql_connection":"mssql://kuka:I<3LarryDrake@robotprogramming.database.windows.net:1433/RobotProgramming?encrypt=true",
-    "mongo_connection":"mongodb://Nerd.Solutions:27017/NerdSolutions"
+    "mongo_connection":"mongodb://Nerd.Solutions:27017/NerdSolutions",
+    "assistant_client_token":"f0ca1d5ff73045119a23b37c295236c6",
+    "assistant_development_token":"56fd938d7d354d03b7ffbe7d49476e9e"
 }

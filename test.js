@@ -1,8 +1,14 @@
 const test=require('assert');
 const fpt=require('./src/node/FanucProcess/test')
+const assist = require('./src/node/Assistant/out/Assistant');
+const fs = require('fs');
 
+let file = './src/Connections.json';
+ var text=fs.readFileSync(file);
+ console.log(text);
+var token = JSON.parse(text).assistant_client_token;
 
-
+var a = new assist.Assistant(token);
 
 test.equal('failed','failed')
 
