@@ -10,6 +10,14 @@
         "sourceMap": true,
         "rootDir": "."
     },    
+    "files": [
+        "./src/node/Assistant/Assistant.ts",
+        "./src/node/Assistant/BaseAssistant.ts",
+        "./src/node/FanucParser/ParseFanuc.ts",
+        "./src/node/FanucParser/RobotFrame.ts"
+         
+
+    ],
     "exclude": [
         "node_modules",
         ".vscode-test",
