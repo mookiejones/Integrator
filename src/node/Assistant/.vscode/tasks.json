@@ -7,5 +7,4 @@
     "args": ["-p", "."],
     "showOutput": "silent",
     "problemMatcher": "$tsc"
-    
 }

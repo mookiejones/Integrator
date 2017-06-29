@@ -1,0 +1,34 @@
+{
+  "name": "kuka-internal",
+  "description": "Internal Kuka server app using express",
+  "main": "server.js",
+  "authors": [
+    "\"charles.heath.berman\""
+  ],
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "latest",
+    "font-awesome": "fontawesome#^4.7.0",
+    "animate.css": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-chart.js": "^1.1.1",
+    "ng-bootstrap": "^1.0.1",
+    "ui-bootstrap": "^2.5.0",
+    "angular-upload": "^1.0.12"
+  }
+}

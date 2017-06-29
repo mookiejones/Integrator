@@ -1,23 +1,38 @@
-var api=require('./src/app/models/robotprogramming')
-var test=require('assert')
-var ContNum=2;
-var CAppNum=2;
+const test=require('assert');
+const fpt=require('./src/node/FanucProcess/test')
+const assist = require('./src/node/Assistant/out/Assistant');
+const fs = require('fs');
 
-console.log('test me');
-// api.getControllerNames(function(result){
-//     debugger;
-// })
-api.getControllerNames()
-    .then(result=>{
-        test.equal(result.length,14);
-    });
+let file = './src/Connections.json';
+ var text=fs.readFileSync(file);
+ console.log(text);
+var token = JSON.parse(text).assistant_client_token;
 
-api.getApplicationNames(ContNum)
-    .then(result=>{
-   //     debugger;
-    })
+var a = new assist.Assistant(token);
 
-api.getAppPaths(CAppNum)
-    .then(result=>{
-        debugger;
-    })
+test.equal('failed','failed')
+
+// var api=require('./src/KukaSql')
+// var test=require('assert')
+// var ContNum=2;
+// var CAppNum=2;
+
+// console.log('test me');
+// // api.getControllerNames(function(result){
+// //     debugger;
+// // })
+
+// api.getControllerNames()
+//     .then(result =>{
+//         test.equal(result.length,14);
+//     });
+
+// api.getApplicationNames(ContNum)
+//     .then(result=>{
+//    //     debugger;
+//     })
+
+// api.getAppPaths(CAppNum)
+//     .then(result=>{
+//         debugger;
+//     })
