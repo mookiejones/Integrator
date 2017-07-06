@@ -5,12 +5,13 @@
     "args": [],
     "tasks": [
         {
+
             "taskName": "build",
             "args": [
-                "${workspaceRoot}/Tfs.csproj"
+                "${workspaceRoot}/Tfs.csproj"        
             ],
             "isBuildCommand": true,
-            "problemMatcher": "$msCompile"
+            "problemMatcher":"$msCompile"
         }
     ]
 }
