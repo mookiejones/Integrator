@@ -1,0 +1,23 @@
+{
+  
+  "name": "kukawebcomponents",
+  "version": "1.0.1",
+  "description": "",
+  "main": "KukaWebComponents.js",
+  "keywords": [
+    "KukaWebComponents"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "KukaWebComponents.js",
+    "out/"
+  ],
+  "keywords": [],
+  "author": "Charles Berman",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.6.1"
+  }
+}

@@ -4,6 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        {
+            "type":"coreclr",
+            "request": "launch",
+            "name":"Test TFS",
+
+            "program": "${workspaceRoot}/src/cs/Tfs/bin/Debug/netcoreapp1.1.2/Tfs.dll"
+        },
          {
             "type": "node",
             "request": "launch",

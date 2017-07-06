@@ -8,6 +8,8 @@ namespace Tfs
         {
             Console.WriteLine("Hello World!");
 
+
+            TfsHelper.GetWorkItems();
             var projects = Project.GetItems()
             .Select(o=>o.name);
             foreach(var project in projects)
@@ -15,6 +17,8 @@ namespace Tfs
 
          //   var result=Project.GetItems();
             Workitem.ParseItems();
+
+
 
         }
     }
