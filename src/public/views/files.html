@@ -1,0 +1,125 @@
+<div >
+<md-card flex>
+  <md-card-header>
+    <md-card-header-text>
+      <span class="md-title">Fanuc TP to LS</span>
+    </md-card-header-text>
+  </md-card-header>
+  <md-card-title>
+    <md-card-title-text>
+            <span class="md-headline">Utility to convert fanuc files</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-content>
+    <div layout="column">
+      <md-input-container >
+                <label>Email</label>
+                <input type="email" aria-label="email">
+              </md-input-container>
+              <md-input-container>
+                <label>Fides Name</label>
+                  <input type="text" aria-label="fides name">
+              </md-input-container>
+            <aps-upload-file accept=".zip"></aps-upload-file>
+    </div>
+  </md-card-content>
+  <md-card-actions>
+    <md-button ng-click="showToast()">Show Toast</md-button>
+    <md-button ng-click="showAdvanced($event)">Ignored Files</md-button>
+    <md-button>Cleaned extensions</md-button>
+  </md-card-actions>
+  <div style="visibility: hidden" flex>
+    <div class="md-dialog-container" id="myDialog">
+      <md-dialog layout-padding layout="column" aria-label="Ignored Files">
+        <form>
+           <md-toolbar>
+            <div class="md-toolbar-tools">
+              <h2>Ignored files</h2>
+              <span flex></span>
+            
+            </div>
+          </md-toolbar>
+          <md-dialog-content style="max-width:800px;max-height:810px; ">
+          <span>Files with this name will be ignored and wont be processed</span>
+          <div layout="row">        
+              <div>
+                <md-input-container>
+                  <label>Files to ignore</label>
+                  <input ng-model="selectedFile.name" type="text" >
+                </md-input-container>
+                <md-button class="md-fab md-primary md-mini" aria-label="Add file" ng-click="addFile()">+</md-button>
+              </div>
+                <md-list >
+                    <md-list-item  ng-repeat="file in files"           >
+                      <md-switch ng-model="file.enabled" ng-change="fileSelected(file)">
+                            {{ file.name }}
+                      </md-switch>
+                      </md-list-item>                     
+                  </md-list>
+          </div>
+        </md-dialog-content>
+       <md-dialog-actions layout="row">    
+      <span flex></span>
+      <md-button ng-click="cancel()" style="margin-right:20px;" >
+        Close
+      </md-button>
+
+    </md-dialog-actions>
+            </form>
+
+
+      </md-dialog>
+    </div>
+  </div>
+
+</div>
+</md-card>
+
+<!--
+  <md-steppers md-selected="selected" md-stretch-steppers="always" ng-init="step2.disabled = true; selected = 0" layout-fill>
+      <md-step label="Select File" md-complete="step1.completed"  ng-disabled="step1.disabled" >
+        <md-card>
+          <md-content layout="column" layout-align="space-between start" style="padding:20px">
+              <md-input-container >
+                <label>Email</label>
+                <input type="email" aria-label="email">
+              </md-input-container>
+              <md-input-container>
+                <label>Fides Name</label>
+                  <input type="text" aria-label="fides name">
+              </md-input-container>
+            <aps-upload-file accept=".zip"></aps-upload-file>
+            <md-button ng-click="step2.disabled=false;selected=1">Next</md-button>
+          </md-content>
+        </md-card>
+      </md-step>
+      <md-step label="Select Options" md-complete="step2.completed"  ng-disabled="step2.disabled">
+                <md-card>
+          <md-content layout="column" layout-align="space-between start" style="padding:20px">
+            <div layout="row">
+              <div>
+                <md-input-container>
+                  <label>Files to ignore</label>
+                  <input ng-model="selectedFile.name" type="text" >
+                </md-input-container>
+                <md-button class="md-fab md-primary md-mini" aria-label="Add file" ng-click="addFile()">+</md-button>
+              </div>
+                <md-list  style="height:200px;" flex>
+                    <md-list-item  ng-repeat="file in files"           >
+                      <md-switch ng-model="file.enabled" ng-change="fileSelected(file)">
+                            {{ file.name }}
+                      </md-switch>
+                      </md-list-item>                     
+                  </md-list>
+
+            </div>
+            <md-button ng-click="step1.disabled=false;selected=0">Prev</md-button>
+            <md-button ng-click="step2.disabled=false;selected=2">Next</md-button>
+    </md-content>    
+                </md-card>
+      </md-step>
+      <md-step label="Finish" md-complete="step3.completed"  ng-disabled="step3.disabled">
+          <md-content></md-content>
+      </md-step>
+  </md-steppers>
+-->
