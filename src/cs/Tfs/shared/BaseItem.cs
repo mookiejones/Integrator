@@ -14,6 +14,19 @@ namespace Tfs
 
          
 
+        public static ItemsResult<T> GetItems<T>(string query)
+            where T:BaseItem{
+                var uri = new Uri(SERVER_URL);
+              using(var client = GetClient()){
+                  HttpResponseMessage response = client.GetAsync(query).Result;
+                  // Check to see if we have a successful response
+                  if(response.IsSuccessStatusCode){
+                      var result =response.Content.ReadAsAsync<ItemsResult<T>>().Result;
+                      return result;
+                  }
+              }
+              return null;   
+            }
         public static string GetItems(string query)
         {
               var uri = new Uri(SERVER_URL);

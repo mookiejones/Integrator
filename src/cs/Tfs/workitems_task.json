@@ -1,0 +1,23 @@
+{
+    "fields": {
+        "System.WorkItemType": "Task",
+        "System.AreaPath": "RobotProgramming",
+        "System.TeamProject": "RobotProgramming",
+        "System.IterationPath": "RobotProgramming",
+        "System.State": "New",
+        "System.Reason": "New",
+        "Microsoft.VSTS.Common.StateChangeDate": "1753-01-01T00:00:00Z",
+        "System.ChangedBy": "Charles Berman <Charles.Berman@kukanao.com>",
+        "System.CreatedBy": "Charles Berman <Charles.Berman@kukanao.com>",
+        "Microsoft.VSTS.Common.Priority": 2
+    },
+    "_links": {
+        "workItemType": {
+            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/workItemTypes/Task"
+        },
+        "fields": {
+            "href": "https://kukasim.visualstudio.com/_apis/wit/fields"
+        }
+    },
+    "url": "https://kukasim.visualstudio.com/_apis/wit/workItems"
+}

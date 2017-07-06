@@ -5,13 +5,18 @@ using System.Linq;
 using System.Threading.Tasks;
 namespace Tfs
 {
+
+    public class Icon{
+public        string id{get;set;}
+      public  string url {get;set;}
+    }
     public class Workitem : BaseItem
     {
 
         public string name { get; set; }
         public string description { get; set; }
         public string color { get; set; }
-        public string icon { get; set; }
+        public Icon icon { get; set; }
 
         public int id { get; set; }
         public string url { get; set; }
@@ -26,28 +31,32 @@ namespace Tfs
         }
 
         private static List<Workitem> GetWorkItemFromProject(string project){
-            var obj = GetItems(project);
-            var result = (ItemsResult<Workitem>)JsonConvert.DeserializeObject(obj,typeof(ItemsResult<Workitem>));
-            return result.value;
+            var result=GetItems<Workitem>(project).ToList();
+            return result;
+
         }
 
         private static async Task<List<Workitem>> GetWorkItemsFromProjects(List<string> projects){
             var result = new List<Workitem>(projects.Count);
             foreach(var project in projects){
                 var p = await GetWorkItemFromProjectAsync(project);
+                Console.WriteLine($"project: {project}, count: {p.Count}");
                 result.AddRange(p);
             }
             return result;
 
           
         }
-        public static void ParseItems()
+
+
+        public static List<Workitem> ParseItems()
         {
             var projects = Project.GetItems()
                 .Select(o => $"{o.name}/_apis/wit/workItemTypes?api-version=1.0")
                 .ToList();
  
             var result = GetWorkItemsFromProjects(projects).Result;
+            return result;
  
         }
         public override List<T> GetItems<T>()

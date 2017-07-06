@@ -1,0 +1,317 @@
+{
+    "count": 2,
+    "value": [
+        {
+            "id": "4774a4de-dff4-4bee-a299-822d923f7be2",
+            "name": "My Queries",
+            "path": "My Queries",
+            "createdBy": {
+                "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                "url": null
+            },
+            "createdDate": "2016-07-20T13:49:06.59Z",
+            "lastModifiedBy": {
+                "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                "url": null
+            },
+            "lastModifiedDate": "2016-07-20T13:49:06.59Z",
+            "isFolder": true,
+            "hasChildren": false,
+            "isPublic": false,
+            "_links": {
+                "self": {
+                    "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/4774a4de-dff4-4bee-a299-822d923f7be2"
+                },
+                "html": {
+                    "href": "https://kukasim.visualstudio.com/web/qr.aspx?pguid=7e881646-01e0-4248-9348-12ac81947b2f&qid=4774a4de-dff4-4bee-a299-822d923f7be2"
+                }
+            },
+            "url": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/4774a4de-dff4-4bee-a299-822d923f7be2"
+        },
+        {
+            "id": "8c33a7d9-18fa-4167-be69-8da990998915",
+            "name": "Shared Queries",
+            "path": "Shared Queries",
+            "createdDate": "2016-07-20T13:49:06.58Z",
+            "lastModifiedBy": {
+                "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                "url": null
+            },
+            "lastModifiedDate": "2016-07-20T13:49:07.387Z",
+            "isFolder": true,
+            "hasChildren": true,
+            "children": [
+                {
+                    "id": "f2eeed92-edd0-4012-a35c-ed8d639ce471",
+                    "name": "Product Planning",
+                    "path": "Shared Queries/Product Planning",
+                    "createdBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "createdDate": "2016-07-20T13:49:07.387Z",
+                    "lastModifiedBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "lastModifiedDate": "2016-07-20T13:49:07.387Z",
+                    "isPublic": true,
+                    "_links": {
+                        "self": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/f2eeed92-edd0-4012-a35c-ed8d639ce471"
+                        },
+                        "html": {
+                            "href": "https://kukasim.visualstudio.com/web/qr.aspx?pguid=7e881646-01e0-4248-9348-12ac81947b2f&qid=f2eeed92-edd0-4012-a35c-ed8d639ce471"
+                        },
+                        "parent": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/8c33a7d9-18fa-4167-be69-8da990998915"
+                        },
+                        "wiql": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/wiql/f2eeed92-edd0-4012-a35c-ed8d639ce471"
+                        }
+                    },
+                    "url": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/f2eeed92-edd0-4012-a35c-ed8d639ce471"
+                },
+                {
+                    "id": "c5edd77b-60af-4b5f-8d8a-db0df8899b56",
+                    "name": "BasicQuery",
+                    "path": "Shared Queries/BasicQuery",
+                    "createdDate": "2017-03-24T17:39:48.6Z",
+                    "lastModifiedBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "lastModifiedDate": "2017-04-20T13:45:15.73Z",
+                    "isPublic": true,
+                    "_links": {
+                        "self": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/c5edd77b-60af-4b5f-8d8a-db0df8899b56"
+                        },
+                        "html": {
+                            "href": "https://kukasim.visualstudio.com/web/qr.aspx?pguid=7e881646-01e0-4248-9348-12ac81947b2f&qid=c5edd77b-60af-4b5f-8d8a-db0df8899b56"
+                        },
+                        "parent": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/8c33a7d9-18fa-4167-be69-8da990998915"
+                        },
+                        "wiql": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/wiql/c5edd77b-60af-4b5f-8d8a-db0df8899b56"
+                        }
+                    },
+                    "url": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/c5edd77b-60af-4b5f-8d8a-db0df8899b56"
+                },
+                {
+                    "id": "9dda3376-926b-4c68-8e9b-9648ea26c214",
+                    "name": "My Bugs",
+                    "path": "Shared Queries/My Bugs",
+                    "createdBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "createdDate": "2016-07-20T13:49:07.387Z",
+                    "lastModifiedBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "lastModifiedDate": "2016-07-20T13:49:07.387Z",
+                    "isPublic": true,
+                    "_links": {
+                        "self": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/9dda3376-926b-4c68-8e9b-9648ea26c214"
+                        },
+                        "html": {
+                            "href": "https://kukasim.visualstudio.com/web/qr.aspx?pguid=7e881646-01e0-4248-9348-12ac81947b2f&qid=9dda3376-926b-4c68-8e9b-9648ea26c214"
+                        },
+                        "parent": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/8c33a7d9-18fa-4167-be69-8da990998915"
+                        },
+                        "wiql": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/wiql/9dda3376-926b-4c68-8e9b-9648ea26c214"
+                        }
+                    },
+                    "url": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/9dda3376-926b-4c68-8e9b-9648ea26c214"
+                },
+                {
+                    "id": "e7ffc636-071c-4e1a-9183-794abc4d936d",
+                    "name": "Current Iteration",
+                    "path": "Shared Queries/Current Iteration",
+                    "createdBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "createdDate": "2016-07-20T13:49:07.387Z",
+                    "lastModifiedBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "lastModifiedDate": "2016-07-20T13:49:07.387Z",
+                    "isFolder": true,
+                    "hasChildren": true,
+                    "isPublic": true,
+                    "_links": {
+                        "self": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/e7ffc636-071c-4e1a-9183-794abc4d936d"
+                        },
+                        "html": {
+                            "href": "https://kukasim.visualstudio.com/web/qr.aspx?pguid=7e881646-01e0-4248-9348-12ac81947b2f&qid=e7ffc636-071c-4e1a-9183-794abc4d936d"
+                        },
+                        "parent": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/8c33a7d9-18fa-4167-be69-8da990998915"
+                        }
+                    },
+                    "url": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/e7ffc636-071c-4e1a-9183-794abc4d936d"
+                },
+                {
+                    "id": "7bb62637-5e6b-448c-b51c-7014b4b7ed6f",
+                    "name": "Troubleshooting",
+                    "path": "Shared Queries/Troubleshooting",
+                    "createdBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "createdDate": "2016-07-20T13:49:07.387Z",
+                    "lastModifiedBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "lastModifiedDate": "2016-07-20T13:49:07.387Z",
+                    "isFolder": true,
+                    "hasChildren": true,
+                    "isPublic": true,
+                    "_links": {
+                        "self": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/7bb62637-5e6b-448c-b51c-7014b4b7ed6f"
+                        },
+                        "html": {
+                            "href": "https://kukasim.visualstudio.com/web/qr.aspx?pguid=7e881646-01e0-4248-9348-12ac81947b2f&qid=7bb62637-5e6b-448c-b51c-7014b4b7ed6f"
+                        },
+                        "parent": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/8c33a7d9-18fa-4167-be69-8da990998915"
+                        }
+                    },
+                    "url": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/7bb62637-5e6b-448c-b51c-7014b4b7ed6f"
+                },
+                {
+                    "id": "ae78ed3f-2c38-4e72-9997-6a8c1206d13c",
+                    "name": "My Test Cases",
+                    "path": "Shared Queries/My Test Cases",
+                    "createdBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "createdDate": "2016-07-20T13:49:07.387Z",
+                    "lastModifiedBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "lastModifiedDate": "2016-07-20T13:49:07.387Z",
+                    "isPublic": true,
+                    "_links": {
+                        "self": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/ae78ed3f-2c38-4e72-9997-6a8c1206d13c"
+                        },
+                        "html": {
+                            "href": "https://kukasim.visualstudio.com/web/qr.aspx?pguid=7e881646-01e0-4248-9348-12ac81947b2f&qid=ae78ed3f-2c38-4e72-9997-6a8c1206d13c"
+                        },
+                        "parent": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/8c33a7d9-18fa-4167-be69-8da990998915"
+                        },
+                        "wiql": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/wiql/ae78ed3f-2c38-4e72-9997-6a8c1206d13c"
+                        }
+                    },
+                    "url": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/ae78ed3f-2c38-4e72-9997-6a8c1206d13c"
+                },
+                {
+                    "id": "7c1435b5-87a5-48bd-b485-2ff58beb9911",
+                    "name": "Feedback",
+                    "path": "Shared Queries/Feedback",
+                    "createdBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "createdDate": "2016-07-20T13:49:07.387Z",
+                    "lastModifiedBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "lastModifiedDate": "2016-07-20T13:49:07.387Z",
+                    "isPublic": true,
+                    "_links": {
+                        "self": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/7c1435b5-87a5-48bd-b485-2ff58beb9911"
+                        },
+                        "html": {
+                            "href": "https://kukasim.visualstudio.com/web/qr.aspx?pguid=7e881646-01e0-4248-9348-12ac81947b2f&qid=7c1435b5-87a5-48bd-b485-2ff58beb9911"
+                        },
+                        "parent": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/8c33a7d9-18fa-4167-be69-8da990998915"
+                        },
+                        "wiql": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/wiql/7c1435b5-87a5-48bd-b485-2ff58beb9911"
+                        }
+                    },
+                    "url": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/7c1435b5-87a5-48bd-b485-2ff58beb9911"
+                },
+                {
+                    "id": "8948efd3-2cbe-4e00-8b59-2d7e0ac877e7",
+                    "name": "My Tasks",
+                    "path": "Shared Queries/My Tasks",
+                    "createdBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "createdDate": "2016-07-20T13:49:07.387Z",
+                    "lastModifiedBy": {
+                        "id": "b6dad8ab-2025-45e4-ab66-f2bd73419af1",
+                        "name": "Charles Berman <Charles.Berman@kukanao.com>",
+                        "url": null
+                    },
+                    "lastModifiedDate": "2016-07-20T13:49:07.387Z",
+                    "isPublic": true,
+                    "_links": {
+                        "self": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/8948efd3-2cbe-4e00-8b59-2d7e0ac877e7"
+                        },
+                        "html": {
+                            "href": "https://kukasim.visualstudio.com/web/qr.aspx?pguid=7e881646-01e0-4248-9348-12ac81947b2f&qid=8948efd3-2cbe-4e00-8b59-2d7e0ac877e7"
+                        },
+                        "parent": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/8c33a7d9-18fa-4167-be69-8da990998915"
+                        },
+                        "wiql": {
+                            "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/wiql/8948efd3-2cbe-4e00-8b59-2d7e0ac877e7"
+                        }
+                    },
+                    "url": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/8948efd3-2cbe-4e00-8b59-2d7e0ac877e7"
+                }
+            ],
+            "isPublic": true,
+            "_links": {
+                "self": {
+                    "href": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/8c33a7d9-18fa-4167-be69-8da990998915"
+                },
+                "html": {
+                    "href": "https://kukasim.visualstudio.com/web/qr.aspx?pguid=7e881646-01e0-4248-9348-12ac81947b2f&qid=8c33a7d9-18fa-4167-be69-8da990998915"
+                }
+            },
+            "url": "https://kukasim.visualstudio.com/7e881646-01e0-4248-9348-12ac81947b2f/_apis/wit/queries/8c33a7d9-18fa-4167-be69-8da990998915"
+        }
+    ]
+}

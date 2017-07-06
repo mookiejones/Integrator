@@ -1,10 +1,12 @@
 namespace Tfs 
 {
     using System;
+    using System.Collections.Generic;
+
     public class RootItemCollection:RootObject<RootQuery>{
         
     }
-    public class RootQuery
+    public class RootQuery:BaseItem
     {
          public string id { get; set; }
         public string name { get; set; }
@@ -19,6 +21,16 @@ namespace Tfs
         public Links _links { get; set; }
         public string url { get; set; }
         public Child[] children { get; set; }
+
+        public override List<T> GetItems<T>()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string GetQuery()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 

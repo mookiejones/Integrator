@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>5C40856A-3655-4BF7-BE6E-E99ACF04B6B9</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Tfs</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)BaseItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Column.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Field.cs" />
+       <Compile Include="$(MSBuildThisFileDirectory)FieldInstance.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IBaseItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Project.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueryItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueryItemCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QueryResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RootObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RootQuery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TfsHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Workitem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorkItemCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorkItemQueryResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WorkItems.cs" />
+
+  </ItemGroup>
+  <ItemGroup>
+   
+  </ItemGroup>
+</Project>
