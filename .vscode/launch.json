@@ -40,6 +40,7 @@
    {
             "type": "node",
             "request": "launch",
+          
             "name": "Test FanucProcess.js",
             "program": "${workspaceRoot}/src/node/FanucProcess/test.js"
         },

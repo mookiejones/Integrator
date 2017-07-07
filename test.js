@@ -1,5 +1,5 @@
 const test=require('assert');
-const fpt = require ('./out/src/node/FanucProcess/test')
+const fpt = require ('./out/src/node/FanucProcess/test').FanucProcessTest
 
 const assist = require('./out/src/node/Assistant/Assistant');
 const fs = require('fs');
@@ -13,6 +13,8 @@ var a = new assist.Assistant(token);
 
 test.equal('failed','failed')
 
+
+process.exit(1);
 // var api=require('./src/KukaSql')
 // var test=require('assert')
 // var ContNum=2;

@@ -3,13 +3,13 @@ import * as test from 'assert';
 import * as chalk from 'chalk';
 
 import * as fs from 'fs';
-import * as FanucProcess from './FanucProcess'
+import { FanucProcess }  from './FanucProcess'
 import * as path from 'path';
 
-var f = new chalk();
-const blue = f.blue;
-const green = f.green;
-const bold = f.bold;
+
+const blue = chalk.blue;
+const green = chalk.green;
+const bold = chalk.bold;
 var test_files_dir:string;
 var test_build_files_dir:string;  
 var __directory='./test';
