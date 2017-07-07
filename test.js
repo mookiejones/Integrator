@@ -1,4 +1,4 @@
-/*const test=require('assert');
+const test=require('assert');
 const fpt = require ('./out/FanucProcess/test')
 
 const assist = require('./out/Assistant/Assistant');
@@ -11,11 +11,11 @@ var token = JSON.parse(text).assistant_client_token;
 
 var a = new assist.Assistant(token);
 
-test.equal('failed','failed')*/
+test.equal('failed','failed')
 
 // var api=require('./src/KukaSql')
 // var test=require('assert')
-// var ContNum=2; 
+// var ContNum=2;
 // var CAppNum=2;
 
 // console.log('test me');
