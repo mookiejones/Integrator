@@ -237,6 +237,8 @@ public static string GetQueryId(string project,string name){
             public string Name { get; set; }
             public string Url { get; set; }
         }
+#region Bugs 
+#endregion
 
 
     }

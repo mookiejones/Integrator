@@ -1,8 +1,13 @@
 {
+            "compileOnSave":true,
+
     "compilerOptions": {
         "module": "commonjs",
         "target": "es6",
-        // "outDir": "out",
+        "removeComments": true,
+        "preserveConstEnums":true,
+
+        "outDir": "out",
         "allowJs": true,
         "lib": [
             "es6"
@@ -10,7 +15,18 @@
         "sourceMap": true,
         "rootDir": "."
     },    
+    "include": [
+        "src/node/Assistant/*",
+        "src/node/FanucParser/*",
+        "src/node/FanucProcess/*",
+        "src/node/KukaConfig/*",
+        "src/node/KukaSql/*",
+        "src/node/tfs/*",
+        "src/node/TimePortal/*",
+        "src/node/web/*"
+    ],
     "exclude": [
+        "src/node/**/node_modules",
         "node_modules",
         "test_files",
         ".vscode-test",

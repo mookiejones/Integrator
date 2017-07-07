@@ -30,7 +30,7 @@
             "name": "Launch Program",
             "program": "${workspaceRoot}/src/server.js"
         },
-
+       
         {
             "type": "node",
             "request": "launch",
@@ -42,6 +42,13 @@
             "request": "launch",
             "name": "Test FanucProcess.js",
             "program": "${workspaceRoot}/src/node/FanucProcess/test.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Gulp",
+            "program": "${workspaceRoot}/node_modules/gulp/bin/gulp.js",
+            "args": ["test"]
         }
     ]
 }

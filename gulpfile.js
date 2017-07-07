@@ -1,3 +1,4 @@
+
 var gulp = require('gulp');
 var path = require('path');
 var zip = require('gulp-zip');
@@ -11,6 +12,10 @@ var knownOptions = {
 }
 
 var options = minimist(process.argv.slice(2), knownOptions);
+
+gulp.task('test',()=>{
+	console.log('hello there')
+});
 
 gulp.task('default', function () {
 

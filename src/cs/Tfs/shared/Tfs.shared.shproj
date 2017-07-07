@@ -4,5 +4,6 @@
     <ProjectGuid>5C40856A-3655-4BF7-BE6E-E99ACF04B6B9</ProjectGuid>
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
   </PropertyGroup>
+  
   <Import Project="Tfs.shared.projitems" Label="Shared" />
 </Project>
