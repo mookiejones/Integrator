@@ -17,7 +17,10 @@ gulp.task('test',()=>{
 	console.log('hello there')
 });
 
-gulp.task('default', function () {
+gulp.task('default',function(){
+	console.log('works');
+});
+gulp.task('deploy', function () {
 
 	var packagePaths = ['**', 
 					'!**/_package/**', 
