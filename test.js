@@ -1,7 +1,7 @@
 const test=require('assert');
-const fpt = require ('./out/FanucProcess/test')
+const fpt = require ('./out/src/node/FanucProcess/test')
 
-const assist = require('./out/Assistant/Assistant');
+const assist = require('./out/src/node/Assistant/Assistant');
 const fs = require('fs');
 
 let file = './src/Connections.json';
