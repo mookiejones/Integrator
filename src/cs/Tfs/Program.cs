@@ -20,10 +20,6 @@ var query = $"RobotProgramming/_apis/wit/queries/Shared%20Queries/AllQuery?api-v
             var q = TfsHelper.GetItems<RootQuery>(query);
 Console.WriteLine(str);
             TfsHelper.GetWorkItems();
-            var projects = Project.GetItems()
-            .Select(o=>o.name);
-            foreach(var project in projects)
-                Console.WriteLine($"project: {project}");
 
          //   var result=Project.GetItems();
            

@@ -6,14 +6,17 @@ namespace Tfs
     public class Project:BaseItem
     {
 
+#region Methods
+    
         public override string GetQuery(){
             return "_apis/projects?stateFilter=All&api-version=1.0";
         }
 
+        private const string PROJECT_QUERY="_apis/projects?stateFilter=All&api-version=1.0";
         public static List<Project> GetItems(){
-            var stringValue = GetItems("_apis/projects?stateFilter=All&api-version=1.0");
-            var result = (ItemsResult<Project>)JsonConvert.DeserializeObject(stringValue,typeof(ItemsResult<Project>));
-            return result.value;
+            var r = BaseItem.GetItems<ItemsResult<Project>>(PROJECT_QUERY);
+
+            return r.value;
         }
         public override List<T> GetItems<T>()
         {
@@ -21,6 +24,7 @@ namespace Tfs
             var result = Deserialize<T>(stringValue);
             return result;
         }
+#endregion
 
         public object id { get; set; }
         public string name { get; set; }
@@ -35,6 +39,8 @@ namespace Tfs
 
     public class ProjectResult{
         public int count{get;set;}
-        public List<Project> value{get;set;}
+        public List<Project> value{get;set;}    
     }
+
+
 }

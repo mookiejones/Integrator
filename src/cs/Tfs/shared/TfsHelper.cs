@@ -16,6 +16,68 @@ namespace Tfs
     using Newtonsoft.Json.Bson;
     public class TfsHelper
     {
+
+        #region Query Strings
+                public const string PROJECT_QUERY="_apis/projects?stateFilter=All&api-version=1.0";
+
+                    const string API_KEY = "maso4j4a6lketok2btjklanprnek7ndlcvr4rdu5u2udpbbi73na";
+        const string SERVER_URL = "https://kukasim.visualstudio.com";
+
+        public static string GetQueriesForProject(string project){
+            var result=$"{project}/_apis/wit/queries?$depth=1&api-version=2.2";
+            return result;
+
+        }
+        public static string GetWorkItemQuery(string project){
+         var  result = $"{project}/_apis/wit/workItemTypes?api-version=1.0";
+         result = $"{project}/_apis/wit/workitems?api-version=1.0";
+            return result;   
+        }
+        #endregion
+
+        private static HttpClient GetClient()
+        {
+            var credentials = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", "", API_KEY)));
+            var result = new HttpClient();
+            result.BaseAddress = new Uri(SERVER_URL);
+            result.DefaultRequestHeaders.Accept.Clear();
+            result.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            result.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", credentials);
+            return result;
+        }
+
+        public static async Task<ItemsResult<T>> GetItemsAsync<T>(string query)
+            where T:BaseItem{
+             var uri = new Uri(SERVER_URL);
+             using(var client = GetClient()){
+                 var response = await client.GetAsync(query);
+
+                 // Check to see if we have a successful response
+                 
+                 if(response.IsSuccessStatusCode){
+                     var result = await response.Content.ReadAsAsync<ItemsResult<T>>();
+                     return result;
+                 }
+             }
+             return default(ItemsResult<T>);                
+            }
+        public static ItemsResult<T> GetItems<T>(string query)
+            where T:BaseItem
+        {
+             var uri = new Uri(SERVER_URL);
+             using(var client = GetClient()){
+                 var response = client.GetAsync(query).Result;
+
+                 // Check to see if we have a successful response
+                 
+                 if(response.IsSuccessStatusCode){
+                     var result = response.Content.ReadAsAsync<ItemsResult<T>>().Result;
+                     return result;
+                 }
+             }
+             return default(ItemsResult<T>);
+
+        }
         public const string URL = "https://kukasim.visualstudio.com/_git/RobotProgramming/";
 
 
@@ -120,7 +182,7 @@ public static string GetQueryId(string project,string name){
  
             var temp = await GetContent($"{project}/_apis/wit/queries?$depth=1&api-version=2.2");
             var sss=await temp.ReadAsStringAsync();
-            var serial = await temp.ReadAsAsync<RootItemCollection>();
+            var serial = await temp.ReadAsAsync<ItemsResult<RootQuery>>();
             Console.WriteLine(sss);
             using (var client = new HttpClient())
             {
@@ -172,7 +234,7 @@ public static string GetQueryId(string project,string name){
                             var str= getWorkItemsHttpResponse.Content.ReadAsStringAsync().Result;
                            Console.WriteLine(str);
                             // var result = getWorkItemsHttpResponse.Content.ReadAsStringAsync().Result;
-                            var result = getWorkItemsHttpResponse.Content.ReadAsAsync<QueryItemCollection>().Result;
+                            var result = getWorkItemsHttpResponse.Content.ReadAsAsync<ItemsResult<QueryItem>>().Result;
                         }
                     }
                 }
@@ -244,22 +306,4 @@ public static string GetQueryId(string project,string name){
     }
 
  
- public static class CoreEx{
-
-     public static List<T> ToList<T>(this ItemsResult<T> items)
-        where T:BaseItem
-     {
-         return items.value;
-     }
-     public static async Task<T> ReadAsAsync<T>(this HttpContent content){
-         var json = await content.ReadAsStringAsync();
-         try{
-         var result = JsonConvert.DeserializeObject<T>(json);
-         return result;
-         }catch(Exception ex){
-            Console.WriteLine(ex);
-         }
-         return default(T);
-     }
- }
 }
