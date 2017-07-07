@@ -15,7 +15,7 @@ test.equal('failed','failed')*/
 
 // var api=require('./src/KukaSql')
 // var test=require('assert')
-// var ContNum=2;
+// var ContNum=2; 
 // var CAppNum=2;
 
 // console.log('test me');
